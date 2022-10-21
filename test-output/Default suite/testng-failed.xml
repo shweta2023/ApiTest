@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.Api_tests.Api_TestCases">
+        <methods>
+          <include name="TC_01Get"/>
+          <include name="setUp"/>
+          <include name="TC_04delete"/>
+          <include name="TC_02post"/>
+          <include name="TC_005Get"/>
+          <include name="tearDown"/>
+          <include name="TC_03delete"/>
+          <include name="tearDownAfterTest"/>
+        </methods>
+      </class> <!-- com.Api_tests.Api_TestCases -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
