@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,426</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.Api_tests.Api_TestCases</td><td><a href="#m0">TC_01Get</a></td><td rowspan="1">1666982344414</td><td rowspan="1">8183</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.Api_tests.Api_TestCases</td><td><a href="#m1">TC_005Get</a></td><td rowspan="1">1666982354333</td><td rowspan="1">1192</td></tr><tr class="passedeven"><td><a href="#m2">TC_02post</a></td><td rowspan="1">1666982352629</td><td rowspan="1">747</td></tr><tr class="passedeven"><td><a href="#m3">TC_03delete</a></td><td rowspan="1">1666982353380</td><td rowspan="1">483</td></tr><tr class="passedeven"><td><a href="#m4">TC_04delete</a></td><td rowspan="1">1666982353864</td><td rowspan="1">467</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.Api_tests.Api_TestCases#TC_01Get</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `[Lcom.Tests.Models.ConvertResponseToPojo;` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: (String)&quot;{&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:[{&quot;id&quot;:1,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:320800,&quot;employee_age&quot;:61,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:2,&quot;employee_name&quot;:&quot;Garrett Winters&quot;,&quot;employee_salary&quot;:170750,&quot;employee_age&quot;:63,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:3,&quot;employee_name&quot;:&quot;Ashton Cox&quot;,&quot;employee_salary&quot;:86000,&quot;employee_age&quot;:66,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:4,&quot;employee_name&quot;:&quot;Cedric Kelly&quot;,&quot;employee_salary&quot;:433060,&quot;employee_age&quot;:22,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:5,&quot;employee_name&quot;:&quot;Airi Satou&quot;,&quot;employee_salary&quot;:162700,&quot;em&quot;[truncated 2061 chars]; line: 1, column: 1]
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)
+	at io.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:254)
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$0.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:54)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:56)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at com.Api_tests.Api_TestCases.TC_01Get(Api_TestCases.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `[Lcom.Tests.Models.ConvertResponseToPojo;` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: (String)&quot;{&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:[{&quot;id&quot;:1,&quot;employee_name&quot;:&quot;Tiger Nixon&quot;,&quot;employee_salary&quot;:320800,&quot;employee_age&quot;:61,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:2,&quot;employee_name&quot;:&quot;Garrett Winters&quot;,&quot;employee_salary&quot;:170750,&quot;employee_age&quot;:63,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:3,&quot;employee_name&quot;:&quot;Ashton Cox&quot;,&quot;employee_salary&quot;:86000,&quot;employee_age&quot;:66,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:4,&quot;employee_name&quot;:&quot;Cedric Kelly&quot;,&quot;employee_salary&quot;:433060,&quot;employee_age&quot;:22,&quot;profile_image&quot;:&quot;&quot;},{&quot;id&quot;:5,&quot;employee_name&quot;:&quot;Airi Satou&quot;,&quot;employee_salary&quot;:162700,&quot;em&quot;[truncated 2061 chars]; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1741)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1462)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.handleNonArray(ObjectArrayDeserializer.java:343)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:194)
+	at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:24)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 54 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.Api_tests.Api_TestCases#TC_005Get</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.Api_tests.Api_TestCases#TC_02post</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.Api_tests.Api_TestCases#TC_03delete</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.Api_tests.Api_TestCases#TC_04delete</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
